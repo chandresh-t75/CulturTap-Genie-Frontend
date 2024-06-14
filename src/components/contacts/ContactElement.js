@@ -5,6 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const ContactElement = ({ details }) => {
+    const [loading,setLoading]=useState(false)
     const [data, setData] = useState({
         name: "",
         countryCode: "",
@@ -24,6 +25,7 @@ const ContactElement = ({ details }) => {
             const apiuri = process.env.REACT_APP_API_URL;
             console.log("apiUri",apiuri)
             console.log("data",data)
+            setLoading(true);
             try {
 
 
@@ -39,10 +41,11 @@ const ContactElement = ({ details }) => {
                     });
                     console.log("res",res)
                     if (res) {
-                        
+                        setLoading(false);
                         toast.success("Send Successfully");
                     }
                     console.log('res', res);
+                   
                     setData({ name: "", countryCode: "", mobileNo: "", email: "", concern: "" });
 
                 }
@@ -56,6 +59,7 @@ const ContactElement = ({ details }) => {
                     });
                     if (res) {
                         console.log("resquery",res)
+                        setLoading(false);
                         toast.success("Send Successfully");
                     }
                     // console.log('res', res);
@@ -140,7 +144,7 @@ const ContactElement = ({ details }) => {
                             className='w-[350px] h-[180px] rounded-2xl bg-[#f9f9f9] stroke-[#2e2c43] outline-none px-[31px] py-[18px] text-black placeholder-[#dbcdbb]'
                         />
                     </div>
-                    <button type='submit' className='w-[300px] md:w-[350px] h-[74px] bg-[#fb8c00] rounded-md text-white font-bold text-[18px]'>{details.submit}</button>
+                    <button type='submit' className='w-[300px] md:w-[350px] h-[74px] bg-[#fb8c00] rounded-md text-white font-bold text-[18px]'>{loading?details.submit:"Loading.."}</button>
                 </form>
 
                 <div className="flex flex-1 justify-center items-center">
