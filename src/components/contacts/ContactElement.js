@@ -112,7 +112,7 @@ const ContactElement = ({ details }) => {
               value={data.name}
               onChange={HandleChange}
               required
-              className="w-[350px] h-[54px] text-black  rounded-2xl bg-[#f9f9f9] stroke-[#2e2c43] outline-none px-[31px] placeholder-[#dbcdbb]"
+              className="w-[350px] h-[54px] text-[14px] text-black  rounded-2xl bg-[#f9f9f9] stroke-[#2e2c43] outline-none px-[31px] placeholder-[#dbcdbb]"
             />
           </div>
           <div className="flex gap-[16px]">
@@ -127,7 +127,7 @@ const ContactElement = ({ details }) => {
                 value={data.countryCode}
                 onChange={HandleChange}
                 required
-                className="w-[104px] h-[54px]  rounded-2xl bg-[#f9f9f9] stroke-[#2e2c43] outline-none px-[31px] text-black placeholder-[#dbcdbb]"
+                className="w-[104px] h-[54px] text-[14px] rounded-2xl bg-[#f9f9f9] stroke-[#2e2c43] outline-none px-[31px] text-black placeholder-[#dbcdbb]"
               />
             </div>
             <div>
@@ -141,7 +141,7 @@ const ContactElement = ({ details }) => {
                 value={data.mobileNo}
                 onChange={HandleChange}
                 required
-                className="w-[230px] h-[54px] rounded-2xl bg-[#f9f9f9] stroke-[#2e2c43] outline-none px-[31px] text-black placeholder-[#dbcdbb]"
+                className="w-[230px] h-[54px] text-[14px] rounded-2xl bg-[#f9f9f9] stroke-[#2e2c43] outline-none px-[31px] text-black placeholder-[#dbcdbb]"
               />
             </div>
           </div>
@@ -154,7 +154,7 @@ const ContactElement = ({ details }) => {
               value={data.email}
               onChange={HandleChange}
               required
-              className="w-[350px] h-[54px] rounded-2xl bg-[#f9f9f9] stroke-[#2e2c43] outline-none px-[31px] text-black placeholder-[#dbcdbb]"
+              className="w-[350px] h-[54px] rounded-2xl text-[14px] bg-[#f9f9f9] stroke-[#2e2c43] outline-none px-[31px] text-black placeholder-[#dbcdbb]"
             />
           </div>
           <div>
@@ -167,7 +167,7 @@ const ContactElement = ({ details }) => {
               value={data.concern}
               onChange={HandleChange}
               required
-              className="w-[350px] h-[180px] rounded-2xl bg-[#f9f9f9] stroke-[#2e2c43] outline-none px-[31px] py-[18px] text-black placeholder-[#dbcdbb]"
+              className="w-[350px] h-[180px] text-[14px] rounded-2xl bg-[#f9f9f9] stroke-[#2e2c43] outline-none px-[31px] py-[18px] text-black placeholder-[#dbcdbb]"
             />
           </div>
           <button

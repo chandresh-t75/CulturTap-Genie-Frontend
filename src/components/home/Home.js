@@ -148,7 +148,7 @@ const Home = () => {
         ))}
       </div>
 
-      <div className="w-full flex flex-col md:flex-row mt-6 ">
+      <div className="w-full flex flex-col md:flex-row mt-10 ">
         <div className="w-screen flex flex-1 flex-col  flex-wrap pl-[20px] pr-[20px] sm:pl-[50px] sm:pr-[30px] lg:pl-[160px] lg:pr-[40px] gap-[30px] my-10 max-lg:justify-center">
           <h1 className="text-[28px] md:text-[32px] xl:text-[38px] font-extrabold heading-color max-sm:text-[28px]">
             About Us !

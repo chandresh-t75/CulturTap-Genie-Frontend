@@ -50,9 +50,11 @@ const Navbar = () => {
     }
 
     return (
-        <div className='w-screen max-sm:fixed max-sm:top-0 flex justify-between  gap-10 md:px-[14px] max-sm:mt-0 max-lg:pb-[20px]  max-lg:pr-[20px] bg-white z-50'>
+        <div className='w-screen max-sm:fixed max-sm:top-0 flex justify-between md:px-[14px] max-sm:mt-0 max-lg:pb-[20px]  lg:pr-[50px] bg-white z-50'>
             <div className='pt-[14px] flex flex-row gap-[20px] md:pl-[14px] max-lg:pl-[30px] relative'>
+            <a href="/">
                 <img src={logo} alt="logo" className=' w-[50px] h-[50px] lg:w-[80px] lg:h-[80px] xl:w-[102px] xl:h-[102px]' />
+                </a>
                 {
                      <img src={Genie} alt="logo" className=' w-[80px] h-[50px] lg:w-[120px] lg:h-[80px] xl:w-[150px] xl:h-[102px]' />
                 
@@ -65,27 +67,27 @@ const Navbar = () => {
                 } */}
               
             </div>
-            <div className='w-[840px] hidden lg:flex lg:gap-4 justify-around items-center text-[#2f2341] text-[16px]'>
+            <div className=' hidden lg:flex lg:gap-10 items-center  text-[#2f2341] text-[16px]'>
                 <div className='w-full flex pt-[40px] gap-[40px] '>
 
 
                     <div className='w-[max-content]'>
-                        <Link to='/' className={`${currPage === "home" ? "font-bold border-b-4 pb-2  border-[#fb8c00]" : ""} text-[16px] `}>Home</Link>
+                        <Link to='/' className={`${currPage === "home" ? "font-bold border-b-4 pb-2  border-[#fb8c00]" : ""} text-[16px] sm:text-[14px] `}>About Us</Link>
                     </div>
                    
                     <div className='w-[max-content]'>
-                        <Link to='/earn' className={`${currPage === "earn" ? "font-bold border-b-4 pb-2  border-[#fb8c00]" : ""} text-[16px] `}>Earn with us</Link>
+                        <Link to='/earn' className={`${currPage === "earn" ? "font-bold border-b-4 pb-2  border-[#fb8c00]" : ""} text-[16px] sm:text-[14px]`}>Earn with us</Link>
                     </div>
                     <div className='w-[max-content]'>
-                        <Link to='/contact' className={`${currPage === "contact" ? "font-bold border-b-4 pb-2  border-[#fb8c00]" : ""} text-[16px] `}>Contact Us</Link>
+                        <Link to='/contact' className={`${currPage === "contact" ? "font-bold border-b-4 pb-2  border-[#fb8c00]" : ""} text-[16px] sm:text-[14px] `}>Contact Us</Link>
                     </div>
                 </div>
                 <div className='w-full flex scale-110 pl-2 gap-[5px] items-center justify-center'>
                     <a href="#" className='mt-[30px]'>
-                        <img src={appStore} alt="appStore" width="120px" height="55px" />
+                        <img src={appStore} alt="appStore" width="100px" height="44px" />
                     </a>
                     <a href="#" className='mt-[30px]'>
-                        <img src={playStore} alt="playStore" width="120px" height="55px" />
+                        <img src={playStore} alt="playStore" width="100px" height="44px" />
                     </a>
                 </div>
             </div>
