@@ -89,7 +89,7 @@ const Home = () => {
           behavior: "auto",
         });
       }
-    }, 30); // Adjust the interval as needed for desired scrolling speed
+    }, 10); // Adjust the interval as needed for desired scrolling speed
 
     contentRef.current.addEventListener("scroll", handleScroll);
 
@@ -109,7 +109,7 @@ const Home = () => {
           {scroller.map((item, index) => (
             <div
               key={index}
-              className={`w-[320px] h-[280px] md:w-[340px] md:h-[280px] lg:w-[360px] lg:h-[300px] xl:w-[380px] xl:h-[320px] flex-shrink-0  md:shadow-slate-600 shadow-sm  m-2 mb-10 ${
+              className={`w-[320px] h-[280px] md:w-[360px] md:h-[300px] lg:w-[400px] lg:h-[360px] xl:w-[480px] xl:h-[360px] flex-shrink-0  md:shadow-slate-600 shadow-sm  m-2 mb-10 ${
                 activeIndex === index ? "active" : ""
               }`}
               style={{ width: "auto" }}
@@ -148,7 +148,7 @@ const Home = () => {
         ))}
       </div>
 
-      <div className="w-full flex flex-col md:flex-row ">
+      <div className="w-full flex flex-col md:flex-row mt-6 ">
         <div className="w-screen flex flex-1 flex-col  flex-wrap pl-[20px] pr-[20px] sm:pl-[50px] sm:pr-[30px] lg:pl-[160px] lg:pr-[40px] gap-[30px] my-10 max-lg:justify-center">
           <h1 className="text-[28px] md:text-[32px] xl:text-[38px] font-extrabold heading-color max-sm:text-[28px]">
             About Us !

@@ -34,8 +34,8 @@ body {
 }
 
 .bullet-point {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background-color: #fb8c00;
 
@@ -43,7 +43,7 @@ body {
 
 .active-bullet {
   width: 30px;
-  border-radius: 30%;
+  border-radius: 40%;
 }
 
 

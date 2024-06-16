@@ -47,8 +47,8 @@ const Earn = () => {
               <span className=" text-[14px] md:text-[16px] xl:text-[16px] font-semibold">
                 Visionary Approach:{" "}
               </span>
-              Promote Your Small Business and Thrive in a Vibrant Retail and
-              Service Community.
+              Promote your small business and thrive in a vibrant retail and
+              service community.
             </p>
             <p className=" text-[14px] md:text-[16px] xl:text-[16px]">
               <span className="text-[14px] md:text-[16px] xl:text-[16px] font-semibold">

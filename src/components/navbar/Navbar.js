@@ -54,15 +54,15 @@ const Navbar = () => {
             <div className='pt-[14px] flex flex-row gap-[20px] md:pl-[14px] max-lg:pl-[30px] relative'>
                 <img src={logo} alt="logo" className=' w-[50px] h-[50px] lg:w-[80px] lg:h-[80px] xl:w-[102px] xl:h-[102px]' />
                 {
-                  currPage==="home" &&   <img src={Genie} alt="logo" className=' w-[50px] h-[50px] lg:w-[102px] lg:h-[102px]' />
+                     <img src={Genie} alt="logo" className=' w-[80px] h-[50px] lg:w-[120px] lg:h-[80px] xl:w-[150px] xl:h-[102px]' />
                 
                 }
-                {
+                {/* {
                     currPage!=="home" && 
                     <div className='absolute max-lg:hidden top-[170px] left-[30px] z-50'>
                     <img src={culturTapName} alt="culturTap" />
                    </div>
-                }
+                } */}
               
             </div>
             <div className='w-[840px] hidden lg:flex lg:gap-4 justify-around items-center text-[#2f2341] text-[16px]'>

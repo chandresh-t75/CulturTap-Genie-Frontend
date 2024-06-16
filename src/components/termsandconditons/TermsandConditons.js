@@ -11,7 +11,7 @@ const TermsAndConditons = () => {
     <div className="max-sm:px-[30px] max-lg:px-[50px] lg:ml-[180px] md:mt-[60px] max-sm:pt-[100px] overflow-x-hidden">
       <div>
         <h1 className="text-[28px] md:text-[32px] xl:text-[38px] heading-color font-extrabold  max-sm:text-[28px]">
-          Terms & Conditions *
+          Terms & Conditions*
         </h1>
       </div>
       <div className="w-full flex flex-col  md:mt-[30px]  ">
