@@ -92,10 +92,10 @@ const ContactElement = ({ details }) => {
   return (
     <div className="max-lg:pl-[0px] lg:ml-[180px] md:mt-[66px] max-sm:pt-[100px] overflow-hidden">
       <div className="max-lg:pl-[30px] ">
-        <h1 className="text-[28px] md:text-[32px] xl:text-[38px] heading-color font-extrabold  max-sm:text-[28px]">
+        <h1 className="text-[28px]  heading-color poppins-black max-sm:text-[28px]">
           {details.type}
         </h1>
-        <p className="text-[14px] text-[#001b33]">{details.title}</p>
+        <p className="text-[14px] text-[#001b33] poppins-regular">{details.title}</p>
       </div>
 
       <div className="md:mt-[69px] flex max-lg:flex-col-reverse max-lg:items-center md:gap-[100px] lg:gap-[150px] ">
@@ -104,7 +104,7 @@ const ContactElement = ({ details }) => {
           className="flex flex-1 flex-col items-center gap-6 z-10"
         >
           <div>
-            <p className="text-[14px] text-[#2e2c43] pl-4 pb-2">Name</p>
+            <p className="text-[14px] text-[#2e2c43] pl-4 pb-2 poppins-regular">Name</p>
             <input
               type="text"
               placeholder="Kishor Kumar"
@@ -112,12 +112,12 @@ const ContactElement = ({ details }) => {
               value={data.name}
               onChange={HandleChange}
               required
-              className="w-[350px] h-[54px] text-[14px] text-black  rounded-2xl bg-[#f9f9f9] stroke-[#2e2c43] outline-none px-[31px] placeholder-[#dbcdbb]"
+              className="w-[350px] h-[54px] text-[14px] text-black  rounded-2xl bg-[#f9f9f9] stroke-[#2e2c43] outline-none px-[31px] poppins-regular placeholder-[#dbcdbb]"
             />
           </div>
           <div className="flex gap-[16px]">
             <div>
-              <p className="text-[14px] w-[max-content] text-[#2e2c43] pl-4 pb-2">
+              <p className="text-[14px] w-[max-content] text-[#2e2c43] pl-4 pb-2 poppins-regular">
                 Country Code
               </p>
               <input
@@ -127,11 +127,11 @@ const ContactElement = ({ details }) => {
                 value={data.countryCode}
                 onChange={HandleChange}
                 required
-                className="w-[104px] h-[54px] text-[14px] rounded-2xl bg-[#f9f9f9] stroke-[#2e2c43] outline-none px-[31px] text-black placeholder-[#dbcdbb]"
+                className="w-[104px] h-[54px] text-[14px] rounded-2xl poppins-regular bg-[#f9f9f9] stroke-[#2e2c43] outline-none px-[31px] text-black placeholder-[#dbcdbb]"
               />
             </div>
             <div>
-              <p className="text-[14px] text-[#2e2c43] pl-4 pb-2">
+              <p className="text-[14px] text-[#2e2c43] pl-4 pb-2 poppins-regular">
                 Mobile number
               </p>
               <input
@@ -141,12 +141,12 @@ const ContactElement = ({ details }) => {
                 value={data.mobileNo}
                 onChange={HandleChange}
                 required
-                className="w-[230px] h-[54px] text-[14px] rounded-2xl bg-[#f9f9f9] stroke-[#2e2c43] outline-none px-[31px] text-black placeholder-[#dbcdbb]"
+                className="w-[230px] h-[54px] text-[14px] poppins-regular rounded-2xl bg-[#f9f9f9] stroke-[#2e2c43] outline-none px-[31px] text-black placeholder-[#dbcdbb]"
               />
             </div>
           </div>
           <div>
-            <p className="text-[14px] text-[#2e2c43] pl-4 pb-2">Email</p>
+            <p className="text-[14px] text-[#2e2c43] pl-4 pb-2 poppins-regular">Email</p>
             <input
               type="email"
               placeholder="shrivastavaaishwary@gmail.com"
@@ -154,11 +154,11 @@ const ContactElement = ({ details }) => {
               value={data.email}
               onChange={HandleChange}
               required
-              className="w-[350px] h-[54px] rounded-2xl text-[14px] bg-[#f9f9f9] stroke-[#2e2c43] outline-none px-[31px] text-black placeholder-[#dbcdbb]"
+              className="w-[350px] h-[54px] poppins-regular rounded-2xl text-[14px] bg-[#f9f9f9] stroke-[#2e2c43] outline-none px-[31px] text-black placeholder-[#dbcdbb]"
             />
           </div>
           <div>
-            <p className="text-[14px] text-[#2e2c43] pl-4 pb-2">Your concern</p>
+            <p className="text-[14px] text-[#2e2c43] pl-4 pb-2 poppins-regular">Your concern</p>
             <textarea
               placeholder="type here..."
               name="concern"
@@ -167,14 +167,14 @@ const ContactElement = ({ details }) => {
               value={data.concern}
               onChange={HandleChange}
               required
-              className="w-[350px] h-[180px] text-[14px] rounded-2xl bg-[#f9f9f9] stroke-[#2e2c43] outline-none px-[31px] py-[18px] text-black placeholder-[#dbcdbb]"
+              className="w-[350px] h-[180px] poppins-regular text-[14px] rounded-2xl bg-[#f9f9f9] stroke-[#2e2c43] outline-none px-[31px] py-[18px] text-black placeholder-[#dbcdbb]"
             />
           </div>
           <button
             type="submit"
-            className="w-[300px] md:w-[350px] h-[74px] bg-[#fb8c00] rounded-md text-white font-bold text-[18px]"
+            className="w-[300px] md:w-[350px] h-[74px] bg-[#fb8c00] rounded-md text-white  text-[18px] poppins-black"
           >
-            {loading ? "Loading..." : details.submit}
+            {loading ? "Sending..." : details.submit}
           </button>
         </form>
 

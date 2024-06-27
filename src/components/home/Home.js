@@ -100,19 +100,19 @@ const Home = () => {
   }, [isPaused]);
 
   return (
-    <div className="w-screen md:mt-[60px] max-sm:pt-[100px] -z-50">
+    <div className="w-screen  max-sm:pt-[100px] -z-50">
       <div className="pl-[10px] mr-[10px] mx-auto sm:pl-[20px] sm:pr-[20px] lg:pl-[40px] ">
         <div
-          className="flex  gap-[30px]  overflow-x-scroll scrollbar-hidden"
+          className="flex  gap-[15px]  overflow-x-scroll scrollbar-hidden bg-white"
           ref={contentRef}
         >
           {scroller.map((item, index) => (
             <div
               key={index}
-              className={`w-[320px] h-[280px] md:w-[360px] md:h-[300px] lg:w-[400px] lg:h-[360px] xl:w-[480px] xl:h-[360px] flex-shrink-0  md:shadow-slate-600 shadow-sm  m-2 mb-10 ${
+              className={`card-slider md:mt-[60px] w-[320px] h-[280px] md:w-[360px] md:h-[300px] lg:w-[400px] lg:h-[360px] xl:w-[480px] xl:h-[360px] flex-shrink-0  m-2 mb-10 sha ${
                 activeIndex === index ? "active" : ""
               }`}
-              style={{ width: "auto" }}
+             
               onMouseEnter={() => setIsPaused(true)}
               onMouseLeave={() => setIsPaused(false)}
             >
@@ -150,22 +150,17 @@ const Home = () => {
 
       <div className="w-full flex flex-col md:flex-row mt-10 ">
         <div className="w-screen flex flex-1 flex-col  flex-wrap pl-[20px] pr-[20px] sm:pl-[50px] sm:pr-[30px] lg:pl-[160px] lg:pr-[40px] gap-[30px] my-10 max-lg:justify-center">
-          <h1 className="text-[28px] md:text-[32px] xl:text-[38px] font-extrabold heading-color max-sm:text-[28px]">
+          <h1 className="text-[28px] md:text-[28px] poppins-black heading-color max-sm:text-[28px]">
             About Us !
           </h1>
-          <p className="text-[14px]  md:text-[16px] xl:text-[16px]">A bargaining app! </p>
-          <p className=" text-[14px] md:text-[16px] xl:text-[16px]">
+          <p className="text-[14px]  md:text-[16px] xl:text-[16px] poppins-semibold">A bargaining app! </p>
+          <p className=" text-[14px]  poppins-regular">
             {" "}
-            Avail the best price for any product or service!{" "}
+            Avail the best prices for all shopping list items & maintenance services!{" "}
           </p>
 
-          <p className="flex justify-center items-center text-[14px] md:text-[16px] xl:text-[16px] ">
-            Now bargaining is possible from your couch! There's no need to
-            wander through markets anymore. CulturTap Genie offers everyone an
-            easy place to bargain with nearby retailers & service providers.
-            Start bargaining by choosing the right spade category. Reject,
-            recreate, & accept bids until you're satisfied with the bargain
-            price. Download the app now and start bargaining.
+          <p className="flex justify-center items-center text-[14px] poppins-regular">
+          Now bargaining is possible from your couch! There is no need to wander in markets anymore. CulturTap Genie offers everyone an easy bargaining place with nearby shops. Start bargaining by choosing the right spade category. Accept, reject, and recreate offers until you are satisfied with the  price. Maintenance services are also available at bargained prices. Download the app now and start bargaining. 
           </p>
         </div>
         <div className="flex-1 flex justify-center mt-[30px]  ">

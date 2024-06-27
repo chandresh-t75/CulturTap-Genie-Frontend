@@ -50,36 +50,29 @@ const Navbar = () => {
     }
 
     return (
-        <div className='w-screen max-sm:fixed max-sm:top-0 flex justify-between md:px-[14px] max-sm:mt-0 max-lg:pb-[20px]  lg:pr-[50px] bg-white z-50'>
+        <div className='w-screen max-sm:fixed max-sm:top-0 flex justify-between md:px-[14px] max-sm:mt-0 max-lg:pb-[20px]  lg:pr-[50px] bg-white md:bg-opacity-0 z-50'>
             <div className='pt-[14px] flex flex-row gap-[20px] md:pl-[14px] max-lg:pl-[30px] relative'>
             <a href="/">
-                <img src={logo} alt="logo" className=' w-[50px] h-[50px] lg:w-[80px] lg:h-[80px] xl:w-[102px] xl:h-[102px]' />
+                <img src={logo} alt="logo" className=' w-[50px] h-[50px] lg:w-[80px] lg:h-[80px] ' />
                 </a>
                 {
-                     <img src={Genie} alt="logo" className=' w-[80px] h-[50px] lg:w-[120px] lg:h-[80px] xl:w-[150px] xl:h-[102px]' />
+                     <img src={Genie} alt="logo" className=' w-[80px] h-[50px] lg:w-[120px] lg:h-[80px] ' />
                 
                 }
-                {/* {
-                    currPage!=="home" && 
-                    <div className='absolute max-lg:hidden top-[170px] left-[30px] z-50'>
-                    <img src={culturTapName} alt="culturTap" />
-                   </div>
-                } */}
-              
             </div>
             <div className=' hidden lg:flex lg:gap-10 items-center  text-[#2f2341] text-[16px]'>
                 <div className='w-full flex pt-[40px] gap-[40px] '>
 
 
                     <div className='w-[max-content]'>
-                        <Link to='/' className={`${currPage === "home" ? "font-bold border-b-4 pb-2  border-[#fb8c00]" : ""} text-[16px] sm:text-[14px] `}>About Us</Link>
+                        <Link to='/' className={`${currPage === "home" ? "poppins-black border-b-4 pb-2  border-[#fb8c00]" : ""}  text-[14px] poppins-regular`}>About Us</Link>
                     </div>
                    
                     <div className='w-[max-content]'>
-                        <Link to='/earn' className={`${currPage === "earn" ? "font-bold border-b-4 pb-2  border-[#fb8c00]" : ""} text-[16px] sm:text-[14px]`}>Earn with us</Link>
+                        <Link to='/earn' className={`${currPage === "earn" ? "poppins-black border-b-4 pb-2  border-[#fb8c00]" : ""}  text-[14px] poppins-regular`}>Earn with us</Link>
                     </div>
                     <div className='w-[max-content]'>
-                        <Link to='/contact' className={`${currPage === "contact" ? "font-bold border-b-4 pb-2  border-[#fb8c00]" : ""} text-[16px] sm:text-[14px] `}>Contact Us</Link>
+                        <Link to='/contact' className={`${currPage === "contact" ? "poppins-black border-b-4 pb-2  border-[#fb8c00]" : ""}  text-[14px] poppins-regular`}>Contact Us</Link>
                     </div>
                 </div>
                 <div className='w-full flex scale-110 pl-2 gap-[5px] items-center justify-center'>
@@ -91,7 +84,7 @@ const Navbar = () => {
                     </a>
                 </div>
             </div>
-            <div className='flex flex-col gap-1 justify-center cursor-pointer lg:hidden' onClick={handleNav}>
+            <div className='flex flex-col gap-1 justify-center cursor-pointer mr-4 lg:hidden' onClick={handleNav}>
                 {isOpen ?
                     (<AiOutlineClose fontSize={30} />) :
                     (<GiHamburgerMenu fontSize={30} />)
@@ -102,7 +95,7 @@ const Navbar = () => {
 
 
             {isOpen &&
-                <div className='w-full flex fixed top-[80px] overflow-y-hidden lg:hidden  justify-center z-50 '>
+                <div className='w-full flex fixed top-[80px] overflow-y-hidden  lg:hidden  justify-center z-50 '>
                     <div className='flex flex-col gap-6 py-10 pb-10 bg-white w-full  h-screen text-[18px]  items-center shadow-md  rounded-md'>
                         <div >
                             <Link to='/' className={`${currPage === "home" ? "font-bold border-b-4 pb-3 border-[#fb8c00]" : ""}`} onClick={handleNav}>Home</Link>
