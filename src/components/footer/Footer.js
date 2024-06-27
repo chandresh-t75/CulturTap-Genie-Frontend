@@ -9,37 +9,37 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="w-[100%] flex max-lg:flex-col text-[14px]  max-lg:items-center lg:justify-between lg:pl-[160px] lg:pr-[150px] mt-[50px] pb-[30px] pt-[30px] bg-[#f5f5f5]  ">
+    <div className="w-[100%] flex max-lg:flex-col text-[14px]  max-lg:items-center lg:justify-between lg:pl-[120px] lg:pr-[120px] mt-[50px] pb-[30px] pt-[30px] bg-[#f5f5f5]  ">
       <div className="w-full lg:w-3/5  flex max-sm:flex-col max-sm:pl-[30px]  max-sm:gap-4  lg:justify-between justify-evenly">
         <div className="">
-          <p className="text-[12px]  md:text-[14px]  poppins-regular">@2024 All rights reserved to </p>
-          <p className="text-[12px]  md:text-[14px] poppins-regular"> CulturTap Tourism India Pvt. Ltd.</p>
+          <p className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">@2024 All rights reserved to </p>
+          <p className="text-[12px]  md:text-[14px] poppins-regular text-[#2E2C43]"> CulturTap Tourism India Pvt. Ltd.</p>
           <div className="flex mt-[26px] poppins-black text-[#2e2c43] text-[12px]  md:text-[14px] xl:text-[16px]">
             Registered Office
           </div>
-          <p className="text-[12px]  md:text-[14px]  poppins-regular">189/2, Out side datia gate,</p>
-          <p className="text-[12px]  md:text-[14px]  poppins-regular">Jhansi, Uttar Pradesh, India.</p>
-          <p className="text-[12px]  md:text-[14px]  poppins-regular">284002</p>
+          <p className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">189/2, Out side datia gate,</p>
+          <p className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">Jhansi, Uttar Pradesh, India.</p>
+          <p className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">284002</p>
           <div className="max-sm:flex flex-col hidden my-2">
             <p className="flex text-[#2e2c43]  text-[12px]  md:text-[14px] xl:text-[16px] poppins-black">Help Center</p>
             <p className="flex flex-col ">
-              <Link to="/contact/report" className="text-[12px]  md:text-[14px] poppins-regular"> Report Concern </Link>
-              <Link to="/contact" className="text-[12px]  md:text-[14px] poppins-regular">Contact Us</Link>
-              <Link to="/termsandconditions" className="text-[12px]  md:text-[14px]  poppins-regular">Terms and Conditions*</Link>
+              <Link to="/contact/report" className="text-[12px]  md:text-[14px] poppins-regular text-[#2E2C43]"> Report Concern </Link>
+              <Link to="/contact" className="text-[12px]  md:text-[14px] poppins-regular text-[#2E2C43]">Contact Us</Link>
+              <Link to="/termsandconditions" className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">Terms and Conditions*</Link>
             </p>
-            <p className="flex mt-[15px] font-bold text-[#2e2c43] text-[12px]  md:text-[14px] xl:text-[16px]">Careers</p>
-            <p className="text-[12px]  md:text-[14px]  poppins-regular">Open Opportunities</p>
+            <p className="flex mt-[15px] font-bold text-[#2e2c43] text-[12px]  md:text-[14px] xl:text-[16px] ">Careers</p>
+            <p className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">Open Opportunities</p>
           </div>
         </div>
         <div className="max-sm:hidden">
-          <p className="flex text-[#2e2c43]  text-[12px]  md:text-[14px] xl:text-[16px] poppins-black">Help Center</p>
+          <p className="flex text-[#2e2c43]  text-[12px]  md:text-[14px] xl:text-[16px] poppins-black text-[#2E2C43]">Help Center</p>
           <p className="flex flex-col ">
-            <Link to="/contact/report" className="text-[12px]  md:text-[14px] poppins-regular"> Report Concern </Link>
-            <Link to="/contact" className="text-[12px]  md:text-[14px] poppins-regular">Contact Us</Link>
-            <Link to="/termsandconditions" className="text-[12px]  md:text-[14px]  poppins-regular">Terms and Conditions*</Link>
+            <Link to="/contact/report" className="text-[12px]  md:text-[14px] poppins-regular text-[#2E2C43]"> Report Concern </Link>
+            <Link to="/contact" className="text-[12px]  md:text-[14px] poppins-regular text-[#2E2C43]">Contact Us</Link>
+            <Link to="/termsandconditions" className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">Terms and Conditions*</Link>
           </p>
           <p className="flex mt-[15px]  text-[#2e2c43] text-[12px]  md:text-[14px] xl:text-[16px] poppins-black">Careers</p>
-          <p className="text-[12px]  md:text-[14px]  poppins-regular">Open Opportunities</p>
+          <p className="text-[12px]  md:text-[14px]  poppins-regular text-[#2E2C43]">Open Opportunities</p>
         </div>
       </div>
 

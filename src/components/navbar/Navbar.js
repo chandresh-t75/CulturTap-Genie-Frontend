@@ -65,14 +65,14 @@ const Navbar = () => {
 
 
                     <div className='w-[max-content]'>
-                        <Link to='/' className={`${currPage === "home" ? "poppins-black border-b-4 pb-2  border-[#fb8c00]" : ""}  text-[14px] poppins-regular`}>About Us</Link>
+                        <Link to='/' className={`${currPage === "home" ? "poppins-black border-b-4 pb-2  border-[#fb8c00]" : ""}  text-[14px] text-[#2F2E41] poppins-regular`}>About Us</Link>
                     </div>
                    
                     <div className='w-[max-content]'>
-                        <Link to='/earn' className={`${currPage === "earn" ? "poppins-black border-b-4 pb-2  border-[#fb8c00]" : ""}  text-[14px] poppins-regular`}>Earn with us</Link>
+                        <Link to='/earn' className={`${currPage === "earn" ? "poppins-black border-b-4 pb-2  border-[#fb8c00]" : ""}  text-[14px] text-[#2F2E41] poppins-regular`}>Earn with us</Link>
                     </div>
                     <div className='w-[max-content]'>
-                        <Link to='/contact' className={`${currPage === "contact" ? "poppins-black border-b-4 pb-2  border-[#fb8c00]" : ""}  text-[14px] poppins-regular`}>Contact Us</Link>
+                        <Link to='/contact' className={`${currPage === "contact" ? "poppins-black border-b-4 pb-2  border-[#fb8c00]" : ""}  text-[14px] text-[#2F2E41] poppins-regular`}>Contact Us</Link>
                     </div>
                 </div>
                 <div className='w-full flex scale-110 pl-2 gap-[5px] items-center justify-center'>
@@ -96,9 +96,9 @@ const Navbar = () => {
 
             {isOpen &&
                 <div className='w-full flex fixed top-[80px] overflow-y-hidden  lg:hidden  justify-center z-50 '>
-                    <div className='flex flex-col gap-6 py-10 pb-10 bg-white w-full  h-screen text-[18px]  items-center shadow-md  rounded-md'>
+                    <div className='flex flex-col gap-6 py-10 pb-10 bg-white w-full  h-screen text-[14px] text-[#2F2E41]  items-center shadow-md  rounded-md'>
                         <div >
-                            <Link to='/' className={`${currPage === "home" ? "font-bold border-b-4 pb-3 border-[#fb8c00]" : ""}`} onClick={handleNav}>Home</Link>
+                            <Link to='/' className={`${currPage === "home" ? "font-bold border-b-4 pb-3 border-[#fb8c00]" : ""}` } onClick={handleNav}>Home</Link>
                         </div>
                         
                         <div >

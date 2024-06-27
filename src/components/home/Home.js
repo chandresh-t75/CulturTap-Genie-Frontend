@@ -127,7 +127,7 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <div className="bullet-points pl-[20px]  sm:pl-[50px]  lg:pl-[160px]">
+      <div className="bullet-points pl-[20px]  sm:pl-[50px]  lg:pl-[120px]">
         {scroller.map((item, index) => (
           <div
             key={item.id}
@@ -149,17 +149,17 @@ const Home = () => {
       </div>
 
       <div className="w-full flex flex-col md:flex-row mt-10 ">
-        <div className="w-screen flex flex-1 flex-col  flex-wrap pl-[20px] pr-[20px] sm:pl-[50px] sm:pr-[30px] lg:pl-[160px] lg:pr-[40px] gap-[30px] my-10 max-lg:justify-center">
-          <h1 className="text-[28px] md:text-[28px] poppins-black heading-color max-sm:text-[28px]">
+        <div className="w-screen flex flex-1 flex-col  flex-wrap pl-[20px] pr-[20px] sm:pl-[50px] sm:pr-[30px] lg:pl-[120px] lg:pr-[40px] gap-[30px] my-10 max-lg:justify-center">
+          <h1 className="text-[28px] md:text-[28px] poppins-black text-[#2E2C43] max-sm:text-[28px]">
             About Us !
           </h1>
-          <p className="text-[14px]  md:text-[16px] xl:text-[16px] poppins-semibold">A bargaining app! </p>
-          <p className=" text-[14px]  poppins-regular">
+          <p className="text-[14px]  md:text-[16px] xl:text-[16px] poppins-semibold text-[#001B33]">A bargaining app! </p>
+          <p className=" text-[14px]  poppins-regular text-[#001B33]">
             {" "}
             Avail the best prices for all shopping list items & maintenance services!{" "}
           </p>
 
-          <p className="flex justify-center items-center text-[14px] poppins-regular">
+          <p className="flex justify-center items-center text-[14px] poppins-regular text-[#001B33]">
           Now bargaining is possible from your couch! There is no need to wander in markets anymore. CulturTap Genie offers everyone an easy bargaining place with nearby shops. Start bargaining by choosing the right spade category. Accept, reject, and recreate offers until you are satisfied with the  price. Maintenance services are also available at bargained prices. Download the app now and start bargaining. 
           </p>
         </div>

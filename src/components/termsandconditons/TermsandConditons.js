@@ -12,9 +12,9 @@ import Star from "../../assets/termsandconditions/star.svg"
 
 const TermsAndConditons = () => {
   return (
-    <div className="max-sm:px-[30px] max-lg:px-[50px] lg:ml-[180px] md:mt-[60px] max-sm:pt-[100px] overflow-x-hidden">
+    <div className="max-sm:px-[30px] max-lg:px-[50px] lg:ml-[120px] md:mt-[60px] max-sm:pt-[100px] overflow-x-hidden">
       <div>
-        <h1 className="text-[28px]  heading-color poppins-black  max-sm:text-[28px]">
+        <h1 className="text-[28px]  text-[#2E2C43] poppins-black  max-sm:text-[28px]">
           Terms & Conditions*
         </h1>
       </div>
@@ -27,9 +27,9 @@ const TermsAndConditons = () => {
             />
           </div>
         <div className="">
-          <p className="text-[20px]  poppins-extrabold">For Customers</p>
+          <p className="text-[20px]  poppins-extrabold text-[#2E2C43]">For Customers</p>
           <ul className="flex flex-col mt-[20px]">
-            <li className="flex text-[14px]   poppins-regular">
+            <li className="flex text-[14px]   poppins-regular text-[#001B33]">
               <span>
               <img
               src={Star}
@@ -40,7 +40,7 @@ const TermsAndConditons = () => {
               </span>
                 Your first 5 spades are free! After that, each spade will cost 20 rupees.
             </li>
-            <li className="flex text-[14px]  poppins-regular">
+            <li className="flex text-[14px]  poppins-regular text-[#001B33]">
               <span>
               <img
               src={Star}
@@ -50,7 +50,7 @@ const TermsAndConditons = () => {
               </span>
               If the shopkeepers don't accept your request, there won't be any charge.
             </li>
-            <li className="flex text-[14px] poppins-regular">
+            <li className="flex text-[14px] poppins-regular text-[#001B33]">
               <span>
               <img
               src={Star}
@@ -60,7 +60,7 @@ const TermsAndConditons = () => {
               </span>
               If you encounter any issues, please report your concerns to us.
             </li>
-            <li className="flex text-[14px]   poppins-regular">
+            <li className="flex text-[14px]   poppins-regular text-[#001B33]">
               <span>
               <img
               src={Star}
@@ -80,9 +80,9 @@ const TermsAndConditons = () => {
             />
           </div>
         <div className="">
-          <p className="text-[20px] poppins-extrabold">For Retailers</p>
+          <p className="text-[20px] poppins-extrabold text-[#2E2C43]">For Retailers</p>
           <ul className="flex flex-col mt-[20px] ">
-          <li className="text-[14px]  poppins-regular">
+          <li className="text-[14px]  poppins-regular text-[#001B33]">
              <div className="flex flex-row">
              <p>
               <img
@@ -98,7 +98,7 @@ const TermsAndConditons = () => {
              </div>
               
             </li>
-            <li className="text-[14px]  poppins-regular">
+            <li className="text-[14px]  poppins-regular text-[#001B33]">
              <div className="flex flex-row">
              <p>
               <img
@@ -113,7 +113,7 @@ const TermsAndConditons = () => {
              </div>
               
             </li>
-            <li className="text-[14px]  poppins-regular">
+            <li className="text-[14px]  poppins-regular text-[#001B33]">
              <div className="flex flex-row">
              <p>
               <img
@@ -128,7 +128,7 @@ const TermsAndConditons = () => {
              </div>
               
             </li>
-            <li className="text-[14px]  poppins-regular">
+            <li className="text-[14px]  poppins-regular text-[#001B33]">
              <div className="flex flex-row">
              <p>
               <img
@@ -143,7 +143,7 @@ const TermsAndConditons = () => {
              </div>
               
             </li>
-            <li className="flex flex-row text-[14px]   poppins-regular">
+            <li className="flex flex-row text-[14px]   poppins-regular text-[#001B33]">
               <span>
               <img
               src={Star}
