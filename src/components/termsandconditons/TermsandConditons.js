@@ -1,160 +1,284 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import earning1 from "../../assets/earnings/earning1.svg";
 import earning2 from "../../assets/earnings/earning2.svg";
 import "../../index.css";
-import { useLocation } from "react-router-dom";
-import Customer from "../../assets/termsandconditions/Customer.svg"
-import Retailer from "../../assets/termsandconditions/Retailer.svg"
-import Star from "../../assets/termsandconditions/star.svg"
-
-
-
+import { Link, useLocation } from "react-router-dom";
+import Customer from "../../assets/termsandconditions/Customer.svg";
+import Retailer from "../../assets/termsandconditions/Retailer.svg";
+import Star from "../../assets/termsandconditions/star.svg";
+import DropDown from "../../assets/termsandconditions/dropdown.svg";
+import DropUp from "../../assets/termsandconditions/dropup.svg";
 
 const TermsAndConditons = () => {
+  const [customerCard, setCustomerCard] = useState(false);
+  const [vendorCard, setVendorCard] = useState(false);
+
   return (
-    <div className="max-sm:px-[30px] max-lg:px-[50px] lg:ml-[120px] md:mt-[60px] max-sm:pt-[100px] overflow-x-hidden">
+    <div className="max-sm:px-[30px] max-lg:px-[50px] lg:mx-[120px] md:mt-[60px] max-sm:pt-[100px] overflow-x-hidden">
       <div>
-        <h1 className="text-[28px]  text-[#2E2C43] poppins-black  max-sm:text-[28px]">
+        <h1 className="text-[28px]  text-[#2E2C43] poppins-black  max-sm:text-[26px]">
           Terms & Conditions*
         </h1>
       </div>
-      <div className="w-full flex flex-col gap-[40px] mt-[20px]  md:mt-[30px]  ">
-      <div className="flex flex-1 max-sm:justify-center">
-            <img
-              src={Customer}
-              alt="contact"
-              className="w-[196px] h-[152px]   "
-            />
+      <div className="w-full flex flex-col gap-[40px] mt-[30px] mb-[30px] md:mt-[30px]  ">
+        {/* customercard */}
+        {!customerCard && (
+          <div className="w-[100%] flex items-center justify-center terms-card mx-auto ">
+            <div className=" w-[100%]  flex flex-col lg:flex-row max-lg:justify-center  max-lg:gap-2 justify-between items-center p-[20px] lg:p-[40px] lg:py-[30px]">
+              <img
+                src={Customer}
+                alt="contact"
+                className="w-[196px] h-[152px]"
+              />
+              <h1 className="text-[28px] flex-1 lg:ml-[30px]  text-[#2E2C43] poppins-black  max-sm:text-[22px] max-lg:text-center">
+                Are you a customer ?
+              </h1>
+              <button
+                className="cursor-pointer"
+                onClick={() => {
+                  setCustomerCard(true);
+                  setVendorCard(false);
+                }}
+              >
+                <img src={DropDown} alt="dropdown" className="   " />
+              </button>
+            </div>
           </div>
-        <div className="">
-          <p className="text-[20px]  poppins-extrabold text-[#2E2C43]">For Customers</p>
-          <ul className="flex flex-col mt-[20px]">
-            <li className="flex text-[14px]   poppins-regular text-[#001B33]">
-              <span>
-              <img
-              src={Star}
-              alt="contact"
-              className="w-[10px] h-[10px] mt-[5px]   mr-4"
-            />
-          
-              </span>
-                Your first 5 spades are free! After that, each spade will cost 20 rupees.
-            </li>
-            <li className="flex text-[14px]  poppins-regular text-[#001B33]">
-              <span>
-              <img
-              src={Star}
-              alt="contact"
-              className="w-[10px] h-[10px] mt-[5px]  mr-4 "
-            />
-              </span>
-              If the shopkeepers don't accept your request, there won't be any charge.
-            </li>
-            <li className="flex text-[14px] poppins-regular text-[#001B33]">
-              <span>
-              <img
-              src={Star}
-              alt="contact"
-              className="w-[10px] h-[10px] mt-[5px]  mr-4  "
-            />
-              </span>
-              If you encounter any issues, please report your concerns to us.
-            </li>
-            <li className="flex text-[14px]   poppins-regular text-[#001B33]">
-              <span>
-              <img
-              src={Star}
-              alt="contact"
-              className="w-[10px] h-[10px]  mt-[5px] mr-4 "
-            />
-              </span>{" "}
-              Shopkeepers will list their store for home delivery, You can choose specific shops or service providers based on your delivery requirements.
-            </li>
-          </ul>
-        </div>
-        <div className="flex flex-1 max-sm:justify-center">
-            <img
-              src={Retailer}
-              alt="contact"
-              className="w-[196px] h-[152px]   "
-            />
+        )}
+
+        {customerCard && (
+          <div className="mb-[30px] flex items-center ">
+            <div className="w-[100%] terms-card p-[20px] flex flex-col gap-4 mx-auto">
+              <div className="flex flex-1 max-sm:justify-center relative">
+                <img
+                  src={Customer}
+                  alt="contact"
+                  className="w-[196px] h-[152px]   "
+                />
+                <button
+                  className="cursor-pointer"
+                  onClick={() => {
+                    setCustomerCard(false);
+                  }}
+                >
+                
+                  <img
+                    src={DropUp}
+                    alt="contact"
+                    className=" absolute max-md:hidden top-[30px] right-[30px]  "
+                  />
+                </button>
+              </div>
+              <div className="relative pb-[40px]">
+                <p className="text-[20px]  poppins-extrabold text-[#2E2C43]">
+                  For Customers
+                </p>
+                <ul className="flex flex-col mt-[20px]">
+                  <li className="flex text-[14px]   poppins-regular text-[#001B33]">
+                    <span>
+                      <img
+                        src={Star}
+                        alt="contact"
+                        className="w-[10px] h-[10px] mt-[5px]   mr-4"
+                      />
+                    </span>
+                    5 spades are free for first-time users! After that, each
+                    spade will cost you 5 Rs. These are temporary charges,
+                    CulturTap will increase the charges shortly. 
+                  </li>
+                  <li className="flex text-[14px]  poppins-regular text-[#001B33]">
+                    <span>
+                      <img
+                        src={Star}
+                        alt="contact"
+                        className="w-[10px] h-[10px] mt-[5px]  mr-4 "
+                      />
+                    </span>
+                    If the vendors don't accept your request, there won't be any
+                    charge.
+                  </li>
+                  <li className="flex text-[14px] poppins-regular text-[#001B33]">
+                    <span>
+                      <img
+                        src={Star}
+                        alt="contact"
+                        className="w-[10px] h-[10px] mt-[5px]  mr-4  "
+                      />
+                    </span>
+                    If you encounter any issues, please report your concerns to
+                    us. 
+                  </li>
+                  <li className="flex text-[14px]   poppins-regular text-[#001B33]">
+                    <span>
+                      <img
+                        src={Star}
+                        alt="contact"
+                        className="w-[10px] h-[10px]  mt-[5px] mr-4 "
+                      />
+                    </span>{" "}
+                    Vendors will list their stores for home delivery, You can
+                    choose specific vendors based on your delivery requirements.
+                  </li>
+                </ul>
+               
+                <div  className="md:hidden flex justify-center items-center mt-[20px]">
+                <button
+                  className="cursor-pointer"
+                  onClick={() => {
+                    setCustomerCard(false);
+                  }}
+                >
+                  <img
+                    src={DropUp}
+                    alt="contact"
+                  
+                  />
+                </button>
+                </div>
+              </div>
+            </div>
           </div>
-        <div className="">
-          <p className="text-[20px] poppins-extrabold text-[#2E2C43]">For Retailers</p>
-          <ul className="flex flex-col mt-[20px] ">
-          <li className="text-[14px]  poppins-regular text-[#001B33]">
-             <div className="flex flex-row">
-             <p>
-              <img
-              src={Star}
-              alt="contact"
-              className="w-[10px] h-[10px] mr-4 mt-[5px]"
-            />
-            </p>
-              <p><b className="mr-1">Do's: </b>Only accept customer requests if you have the product available. Authenticity and honesty are crucial to us and our customers.
+        )}
 
-              </p>
+        {/* vendorcard */}
 
-             </div>
-              
-            </li>
-            <li className="text-[14px]  poppins-regular text-[#001B33]">
-             <div className="flex flex-row">
-             <p>
+        {!vendorCard && (
+          <div className="w-[100%] flex items-center justify-center terms-card mx-auto ">
+            <div className=" w-[100%]  flex flex-col lg:flex-row max-lg:justify-center  max-lg:gap-2 justify-between items-center p-[20px] lg:p-[40px] lg:py-[30px]">
               <img
-              src={Star}
-              alt="contact"
-              className="w-[10px] h-[10px] mr-4 mt-[5px]"
-            />
-            </p>
-              <p><b className="mr-1">Don'ts: </b>Customer complaints may lead to a permanent account block or a significant penalty to unlock the account.
-              </p>
+                src={Retailer}
+                alt="contact"
+                className="w-[196px] h-[152px]  "
+              />
+              <h1 className="text-[28px] flex-1 lg:ml-[30px]  text-[#2E2C43] poppins-black  max-sm:text-[22px] max-lg:text-center">
+                Are you a vendor ?
+              </h1>
+              <button
+                className="cursor-pointer"
+                onClick={() => {
+                  setVendorCard(true);
+                  setCustomerCard(false);
+                }}
+              >
+                <img src={DropDown} alt="dropdown" className="   " />
+              </button>
+            </div>
+          </div>
+        )}
 
-             </div>
-              
-            </li>
-            <li className="text-[14px]  poppins-regular text-[#001B33]">
-             <div className="flex flex-row">
-             <p>
-              <img
-              src={Star}
-              alt="contact"
-              className="w-[10px] h-[10px] mr-4 mt-[5px]"
-            />
-            </p>
-              <p><b className="mr-1">Support: </b>Tell us what you want to start as a new small business, and we'll create your business category on our platform. 
-              </p>
-
-             </div>
-              
-            </li>
-            <li className="text-[14px]  poppins-regular text-[#001B33]">
-             <div className="flex flex-row">
-             <p>
-              <img
-              src={Star}
-              alt="contact"
-              className="w-[10px] h-[10px] mr-4 mt-[5px]"
-            />
-            </p>
-              <p><b className="mr-1">Grow Your Business: </b>We will help you attract and keep customers.
-              </p>
-
-             </div>
-              
-            </li>
-            <li className="flex flex-row text-[14px]   poppins-regular text-[#001B33]">
-              <span>
-              <img
-              src={Star}
-              alt="contact"
-              className="w-[10px] h-[10px] mt-[5px]  mr-4"
-            />
-              </span>
-              CulturTap Genie business app is free for now, but there will be fewer charges like 100 rupees for 100 customers soon.
-            </li>
-          </ul>
-        </div>
+        {vendorCard && (
+          <div className="mb-[30px] flex ">
+            <div className="w-[100%] terms-card p-[20px] flex flex-col gap-4 mx-auto">
+              <div className="flex flex-1 max-sm:justify-center relative">
+                <img
+                  src={Retailer}
+                  alt="contact"
+                  className="w-[196px] h-[152px]   "
+                />
+                <button
+                  className="cursor-pointer"
+                  onClick={() => {
+                    setVendorCard(false);
+                  }}
+                >
+                  <img
+                    src={DropUp}
+                    alt="contact"
+                    className=" absolute max-md:hidden top-[30px] right-[30px]"
+                  />
+                </button>
+              </div>
+              <div className="relative pb-[40px]">
+                <p className="text-[20px] poppins-extrabold text-[#2E2C43]">
+                  For Retailers
+                </p>
+                <ul className="flex flex-col mt-[20px]">
+                  <li className="text-[14px]   poppins-regular text-[#001B33]">
+                    <div className="flex items-start">
+                      <img
+                        src={Star}
+                        alt="contact"
+                        className="w-[10px] h-[10px] mt-[5px] mr-4"
+                      />
+                      <p className="text-[14px]   poppins-regular text-[#001B33]">
+                        <span className="text-[14px]  poppins-bold text-[#001B33]">
+                          Do's:{" "}
+                        </span>
+                        Only accept customer requests if you have the same
+                        product available. Authenticity and honesty are crucial
+                        to us and our customers.
+                      </p>
+                    </div>
+                  </li>
+                  <li className="text-[14px]  poppins-regular text-[#001B33]">
+                    <div className="flex items-start">
+                      <img
+                        src={Star}
+                        alt="contact"
+                        className="w-[10px] h-[10px] mt-[5px] mr-4"
+                      />
+                      <p className="text-[14px]  poppins-regular text-[#001B33]">
+                        Maintain your store rating on top for customer trust and
+                        satisfaction.
+                      </p>
+                    </div>
+                  </li>
+                  <li className="text-[14px]   poppins-regular text-[#001B33]">
+                    <div className="flex items-start">
+                      <img
+                        src={Star}
+                        alt="contact"
+                        className="w-[10px] h-[10px] mt-[5px] mr-4"
+                      />
+                      <p className="text-[14px]   poppins-regular text-[#001B33]">
+                        <span className="text-[14px]  poppins-bold text-[#001B33]">
+                          Dont's:{" "}
+                        </span>
+                        Customer complaints may lead to a permanent account
+                        block or a significant penalty for unlocking the
+                        account.
+                      </p>
+                    </div>
+                  </li>
+                  <li className="text-[14px]   poppins-regular text-[#001B33]">
+                    <div className="flex items-start">
+                      <img
+                        src={Star}
+                        alt="contact"
+                        className="w-[10px] h-[10px] mt-[5px] mr-4"
+                      />
+                      <p className="text-[14px]   poppins-regular text-[#001B33]">
+                        <span className="text-[14px]  poppins-bold text-[#001B33]">
+                          Support:{" "}
+                        </span>
+                        Tell us what you want to start as a new small business,
+                        and we'll consider your business category for our
+                        platform, We support small businesses to attract local
+                        customers online and help to convert into a profitable
+                        business.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <div  className="md:hidden flex justify-center items-center mt-[20px]">
+                <button
+                  className="cursor-pointer"
+                  onClick={() => {
+                    setVendorCard(false);
+                  }}
+                >
+                  <img
+                    src={DropUp}
+                    alt="contact"
+                   
+                  />
+                </button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

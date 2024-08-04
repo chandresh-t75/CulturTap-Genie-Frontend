@@ -155,12 +155,11 @@ const Home = () => {
           </h1>
           <p className="text-[14px]  md:text-[16px] xl:text-[16px] poppins-semibold text-[#001B33]">A bargaining app! </p>
           <p className=" text-[14px]  poppins-regular text-[#001B33]">
-            {" "}
-            Avail the best prices for all shopping list items & maintenance services!{" "}
+            CulturTap Genie is the world's first app dedicated to bargaining. Avail the best prices for all shopping items & maintenance services! 
           </p>
 
           <p className="flex justify-center items-center text-[14px] poppins-regular text-[#001B33]">
-          Now bargaining is possible from your couch! There is no need to wander in markets anymore. CulturTap Genie offers everyone an easy bargaining place with nearby shops. Start bargaining by choosing the right spade category. Accept, reject, and recreate offers until you are satisfied with the  price. Maintenance services are also available at bargained prices. Download the app now and start bargaining. 
+          Now bargaining is possible from your couch! There is no need to wander in markets anymore. CulturTap Genie offers everyone an easy bargaining place with nearby stores and service providers. Start bargaining by choosing the right spades category. Accept, recreate, and reject offers until you are satisfied with the offered price. Download the app now and start bargaining.
           </p>
         </div>
         <div className="flex-1 flex justify-center mt-[30px]  ">

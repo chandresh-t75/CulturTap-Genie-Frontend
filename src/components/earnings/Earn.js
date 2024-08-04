@@ -32,81 +32,63 @@ const Earn = () => {
           <div className="">
             <p className=" text-[14px] poppins-bold text-[#2F2E41] my-4">Culturtap Genie Business app</p>
             <p className=" text-[14px] poppins-regular text-[#001B33]">
-              An application designed for individuals who own small businesses
-              such as shops, stores, and warehouses, as well as for maintenance
-              professionals such as plumbers, electricians, carpenters, and
-              others in similar trades. This app is also suitable for aspiring
-              people looking to start a new small business. The CulturTap Genie
-              Business app boosts small businesses, creating a supportive
-              ecosystem for shops and maintenance workers to attract more & more
-              customers to increase sales exponentially. Engage with real
-              customers through bargaining on the CulturTap Genie Business app. 
+            CulturTap Genie is the world's first app dedicated to bargaining. The application is designed for individuals who own small businesses such as shops, stores, and warehouses, as well as for maintenance work professionals such as plumbers, electricians, carpenters, and others in similar trades. This app is also helpful for aspiring people looking to start a new small business. The CulturTap Genie Business App unites small business entities, creating a supportive ecosystem for stores and maintenance professionals to attract more & more customers to increase sales & grow exponentially. Engage with real customers through bargaining on the CulturTap Genie Business app.
             </p>
             <p className=" text-[14px]    mt-6 poppins-bold text-[#001B33]">
-              How Does CulturTap Genie Business App Work?
+            How Does CulturTap Genie Business App Work?
             </p>
             <div className="flex flex-col mt-[20px] gap-2">
               <p className="text-[14px] poppins-regular  text-[#001B33]">
-                Ready to connect with customers online like never before? The
-                Genie is here to help. Shopkeepers can capture customer’s
-                attention by offering the best price for shopping list items &
-                services.
+              Ready to connect with customers online like never before? The Genie is here to help. Vendors can capture customers’ attention by offering the best price for available stock items & services.
               </p>
               <p className="text-[14px] poppins-regular text-[#001B33]">
                 <span className=" text-[14px] poppins-semibold text-[#001B33]">
                   1. Recieve Notifications:{" "}
                 </span>
-                You will receive notifications with a message and product images
-                with the customer’s expected price. 
+                You will receive notifications with a message and product images with the customer’s expected price. 
               </p>
               <p className="text-[14px] poppins-regular ml-4 text-[#001B33]">
-                • Example: "I need to replace my laptop charger, Expected Price:
-                1230 Rs"
+               Example: "I need to replace my laptop charger, Expected Price: 1230 Rs"
               </p>
 
               <p className=" text-[14px] poppins-regular text-[#001B33]">
                 <span className="text-[14px] poppins-semibold">
                   2. Accept Requests:{" "}
                 </span>
-                If you have the right product or service availability, you can
-                accept the customer's request. 
+                If you have the right product or service availability, you can accept the customer's request. 
               </p>
               <p className="text-[14px] poppins-regular text-[#001B33]">
                 <span className=" text-[14px]  poppins-semibold">
                   3. Send an Offer or Query:{" "}
                 </span>
-                You can ask for more details about the product, send product
-                attachments, & create a new offer. 
+                You can ask for more details about the product, send product-related attachments, or create a new offer for the customer. 
               </p>
               <div className="flex flex-col ml-4">
                 <p className="text-[14px] poppins-regular text-[#001B33]">
                   <span className=" text-[14px]  poppins-semibold">
-                    • Send Query:{" "}
+                    • Send Message Query:{" "}
                   </span>
-                  If you don't understand the customer's needs, ask for more
-                  details.  
+                  If you don't understand the customer's needs, ask for more details.
                 </p>
                 <p className="text-[14px] poppins-regular text-[#001B33]">
                   <span className=" text-[14px]  poppins-semibold">
                     • Send an Offer:{" "}
                   </span>
-                  Send an offer with the image references to confirm product
-                  availability with the offered price & warranty.
+                  Send an offer with the image references to confirm product availability with the offered price & product warranty.
                 </p>
               </div>
             </div>
           </div>
           <div className="">
             <p className=" text-[14px]  poppins-bold mt-8 text-[#001B33] ">
-              How to Send an Offer to the Customer?
+              How to “Send an Offer” to the Customer?
             </p>
             <div className="flex flex-col mt-[10px]">
               <p className=" text-[14px] poppins-regular text-[#001B33]">
                 Step 1. Type your response first. 
               </p>
               <p className=" text-[14px] poppins-regular text-[#001B33]">
-                Step 2. Click a real product image for the right match and
-                availability.
+                Step 2. Click a real product image for the right match.
               </p>
               <p className=" text-[14px] poppins-regular text-[#001B33]">
                 Step 3. Type your offered price and product warranty.
