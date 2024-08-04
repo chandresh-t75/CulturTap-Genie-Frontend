@@ -190,7 +190,7 @@ const TermsAndConditons = () => {
               </div>
               <div className="relative pb-[40px]">
                 <p className="text-[20px] poppins-extrabold text-[#2E2C43]">
-                  For Retailers
+                  For Vendors
                 </p>
                 <ul className="flex flex-col mt-[20px]">
                   <li className="text-[14px]   poppins-regular text-[#001B33]">
